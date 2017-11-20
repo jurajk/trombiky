@@ -1,0 +1,28 @@
+.form {
+	height: rem-calc( 120 );
+	position: relative;
+
+	iframe {
+		height: 100%;
+		width: 100%;
+	}
+
+	&--expanded {
+		height: rem-calc( 670 );
+	}
+
+	&__action {
+		@include button;
+		position: absolute;
+		margin-left: 50%;
+		transform: translateX( -50% ) translateY( -50% );
+
+		.form--expanded & {
+			display: none;
+		}
+
+		@include breakpoint( medium ) {
+			font-size: rem-calc( 32 );
+		}
+	}
+}

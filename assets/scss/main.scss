@@ -8,7 +8,7 @@
 // @include foundation-grid;
 @include foundation-flex-grid;
 //
-// @include foundation-xy-grid-classes;
+@include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -59,7 +59,7 @@
 // @import 'icomoon-variables';
 // @import '_foundation-icons.scss';
 @import 'common';
-// @import 'typography';
+@import 'typography';
 @import 'utilites';
 
 // cssGlobbingBegin

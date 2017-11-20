@@ -1,0 +1,8 @@
+.section {
+	@include xy-grid-container;
+	justify-content: center;
+
+	&--onecol {
+		@include xy-cell();
+	}
+}

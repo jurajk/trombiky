@@ -55,7 +55,7 @@ var paths = {
         'assets/scss/**/*.scss'
         ],
         scssPaths: [
-        'assets/scss', 
+        'assets/scss/**/*.scss', 
         'node_modules/foundation-sites/scss', 
         'node_modules/motion-ui'
         ],

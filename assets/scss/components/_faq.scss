@@ -1,0 +1,11 @@
+.faq {
+	@include xy-grid;
+	
+	&__col {
+		@include xy-cell;
+
+		@include breakpoint( medium ) {
+			@include xy-cell( 6 );
+		}
+	}
+}

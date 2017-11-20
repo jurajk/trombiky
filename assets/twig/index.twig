@@ -1,11 +1,79 @@
 {% extends "_layout.common.twig" %}
 
-{% block title %}Page title{% endblock %}
+{% block title %}Hľadáme 100 statočných{% endblock %}
 
 {% block page %}
 
-<h1>Hľadáme 500 statočných</h1>
+	<div class="container">
+		<section class="section section--onecol spacing">
+			{# <div class="cell"> #}
+				<h1>Hľadáme 100 statočných</h1>
+			{# </div> #}
+			{# <div class="cell"> #}
+				<p class="intro">
+					O tom, že môžeš darovať krv asi vieš. To, že sa dajú darovať aj krvné doštičky už také známe nie je. Odpovedz na 7 otázok a pomôž nám tak nájsť 100 úplne nových darcov krvných doštičiek.
+				</p>
+			{# </div> #}
+		</section>
 
-<p class="intro">asdf</p>
+		<section id="form" class="section section--onecol spacing">
+			<div class="form form--expanded">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				<button type="button" class="form__action">Zacat vyplnat</button>	
+			</div>
+		</section>
+
+		<h2 class="text-center">Kto sme a iné FAQ</h2>
+		
+		<section class="section faq">
+			<div class="faq__col">
+				<div class="media-object">
+				  <div class="media-object-section">
+				    <div class="thumbnail">
+				      <img src="assets/img/media-object/avatar-1.jpg">
+				    </div>
+				  </div>
+				  <div class="media-object-section">
+				    <h4>Martin Mojzeš</h4>
+				    <p>Som čerstvý otec dvoch a držiteľ neprebratej striebornej Jánskeho plakety. Od 18-tich rokov darujem krv, od 27-mich krvné doštičky, posledný rok v Národnom onkologickom ústave. Vždy hľadám cesty ako urobiť viac.</p>
+				  </div>
+				</div>				
+			</div>
+			<div class="faq__col">
+				<div class="media-object">
+				  <div class="media-object-section">
+				    <div class="thumbnail">
+				      <img src="assets/img/media-object/avatar-1.jpg">
+				    </div>
+				  </div>
+				  <div class="media-object-section">
+				    <h4>Andrej Minárik</h4>
+				    <p>V apríli tohto roku mi začalo byť divne, v máji už som mal diagnózu - akútna lymfoblastová leukémia. Nikdy som nebol darovať krv ani doštičky a teraz ma to mrzí, zvlášť keď vidím z druhej strany ako sú potrebné tu na onkológii. Rozhodol som sa s tým niečo spraviť.</p>
+				  </div>
+				</div>		
+			</div>
+			<div class="faq__col">
+				<h4>O čom to celé je?</h4>
+				<p>Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. </p>
+			</div>
+			<div class="faq__col">
+				<h4>Čo chcete robiť?</h4>
+				<p>Rozprávali sme sa s pacientami, lekármi a sestričkami. A teraz potrebujeme zistiť viac od darcov a nedarcov. Dotazník nám pomôže lepšie ich pochopiť a zohnať 100 nových darcov doštičiek.</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<button type="button" class="button align-center">Vyplnit form</button>
+		</section>
+	</div>
+
+	<footer>
+		<section class="section section--invert section--onecol">
+			<p class="text-center">Kontakt: </p>
+
+			
+		</section>
+	</footer>
+
 
 {% endblock %}

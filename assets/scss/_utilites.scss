@@ -6,3 +6,10 @@
     - E.g. margin on a button or a text
     - have prefix pr-u-
    ========================================================================== */
+
+.spacing {
+
+	&.section {
+		margin-bottom: $tr-spacing;
+	}
+}
