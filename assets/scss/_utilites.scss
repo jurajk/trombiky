@@ -9,7 +9,7 @@
 
 .spacing {
 
-	&.section {
-		margin-bottom: $tr-spacing;
+	&, &.section {
+		margin-bottom: $tr-common-spacing;
 	}
 }

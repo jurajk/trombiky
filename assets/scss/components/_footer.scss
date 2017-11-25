@@ -1,0 +1,15 @@
+footer {
+	background-color: $primary-color;
+	color: $white;
+	padding: $tr-common-spacing;
+
+	a {
+		color: $white;
+		font-weight: bold;
+
+		&:hover {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+}

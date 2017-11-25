@@ -1,8 +1,12 @@
 .section {
-	@include xy-grid-container;
+	@include xy-grid;
 	justify-content: center;
 
 	&--onecol {
 		@include xy-cell();
+	}
+
+	&--first {
+		margin-top: $tr-common-spacing;
 	}
 }

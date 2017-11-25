@@ -13,9 +13,21 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+
         
         <link rel="stylesheet" href="dist/css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,15 +37,14 @@
         
 
 	<div class="container">
-		<section class="section section--onecol spacing">
-			
-				<h1>Hľadáme 100 statočných</h1>
-			
-			
-				<p class="intro">
-					O tom, že môžeš darovať krv asi vieš. To, že sa dajú darovať aj krvné doštičky už také známe nie je. Odpovedz na 7 otázok a pomôž nám tak nájsť 100 úplne nových darcov krvných doštičiek.
-				</p>
-			
+		<section class="section section--onecol section--first spacing">
+			<h1 class="spacing">Hľadáme 100 statočných</h1>
+			<p class="intro">
+				O tom, že môžeš darovať krv asi vieš. To, že sa dajú darovať aj krvné doštičky už také známe nie je. Denne na Slovensku zachraňujú onkologických (rakovina) a hematologických (krv) pacientov, dajú sa skladovať len niekoľko dní a darcov nie je veľa.
+			</p>
+			<p class="intro">
+				Odpovedz na 8 otázok a pomôž nám tak nájsť 100 úplne nových darcov krvných doštičiek.
+			</p>
 		</section>
 
 		<section id="form" class="section section--onecol spacing">
@@ -43,14 +54,14 @@
 			</div>
 		</section>
 
-		<h2 class="text-center">Kto sme a iné FAQ</h2>
+		<h2 class="text-center spacing">Kto sme a iné FAQ</h2>
 		
-		<section class="section faq">
+		<section class="section faq spacing">
 			<div class="faq__col">
-				<div class="media-object">
+				<div class="media-object profile">
 				  <div class="media-object-section">
 				    <div class="thumbnail">
-				      <img src="assets/img/media-object/avatar-1.jpg">
+				      <img src="assets/images/foto_martin.jpg">
 				    </div>
 				  </div>
 				  <div class="media-object-section">
@@ -60,10 +71,10 @@
 				</div>				
 			</div>
 			<div class="faq__col">
-				<div class="media-object">
+				<div class="media-object profile">
 				  <div class="media-object-section">
 				    <div class="thumbnail">
-				      <img src="assets/img/media-object/avatar-1.jpg">
+				      <img src="assets/images/foto_andrej.jpg">
 				    </div>
 				  </div>
 				  <div class="media-object-section">
@@ -74,31 +85,37 @@
 			</div>
 			<div class="faq__col">
 				<h4>O čom to celé je?</h4>
-				<p>Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. </p>
+				<p>Dotazník nám má pomôcť lepšie pochopiť ako darcov krvi (a krvných doštičiek), tak ľudí, ktorí nezvyknú darovať. Chceme nájsť spôsob ako čo najlepšie nájsť ľudí ochodných stať sa dlhodobými darcami krvných doštičiek, ktorí reálne chýbajú, najmä v období sviatkov a dovoleniek. Vedeli ste, že doštičky sa dajú skladovať iba niekoľko dní?</p>
 			</div>
 			<div class="faq__col">
 				<h4>Čo chcete robiť?</h4>
-				<p>Rozprávali sme sa s pacientami, lekármi a sestričkami. A teraz potrebujeme zistiť viac od darcov a nedarcov. Dotazník nám pomôže lepšie ich pochopiť a zohnať 100 nových darcov doštičiek.</p>
+				<p>Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Rozprávali sme sa s pacientami, lekármi a sestričkami. A teraz potrebujeme zistiť viac od darcov a nedarcov. Dotazník nám pomôže lepšie ich pochopiť a následne nájsť 100 nových darcov doštičiek.</p>
 			</div>
 		</section>
 
 		<section class="section">
-			<button type="button" class="button align-center">Vyplnit form</button>
+			<a href="#form" class="button cta align-center spacing" data-smooth-scroll>Vyplniť dotazník</a>
 		</section>
 	</div>
 
 	<footer>
-		<section class="section section--invert section--onecol">
-			<p class="text-center">Kontakt: </p>
+		
+			<h2 class="text-center">Kontakt: </h2>
+			<p class="text-center"><a href="mailto:martin@100statocnych.sk">martin@100statocnych.sk</a>, <a href="mailto:andrej@100statocnych.sk">andrej@100statocnych.sk</a></p>
 
 			
-		</section>
+		
 	</footer>
 
 
 
 
+        <script src="/dist/js/jquery.min.js"></script>
         <script src="dist/js/main.js"></script>
+
+        <script>
+            //$(document).foundation();
+        </script>
     </body>
 </html>
 

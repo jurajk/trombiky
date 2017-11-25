@@ -13,9 +13,11 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+{% include '_social_markup.twig' %}
+
         {# <link rel="stylesheet" href="css/normalize.css"> #}
         <link rel="stylesheet" href="dist/css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,7 +26,12 @@
 
         {% block page %}{% endblock %}
 
+        <script src="/dist/js/jquery.min.js"></script>
         <script src="dist/js/main.js"></script>
+
+        <script>
+            //$(document).foundation();
+        </script>
     </body>
 </html>
 

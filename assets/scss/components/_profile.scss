@@ -1,0 +1,21 @@
+.profile {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@include breakpoint( medium ) {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
+	.thumbnail {
+		border-radius: 50%;
+	}
+
+	&.media-object {
+	}
+
+	img {
+		max-width: 100%;
+		max-width: rem-calc( 180 );
+		border-radius: 50%;
+	}
+}

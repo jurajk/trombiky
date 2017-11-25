@@ -22,21 +22,22 @@ var paths = {
     scripts: [
         // 'node_modules/modernizr/modernizr.js',
         // 'node_modules/fastclick/lib/fastclick.js',
-        // 'node_modules/foundation/js/foundation/foundation.js',
-        // 'bower_components/foundation/js/foundation/foundation.tab.js',
         // 'assets/js/navigation.js',
         
+        // TODO temporarily loading from dist folder, find out how to load original files
+        // https://foundation.zurb.com/forum/posts/53440-foundation-custom-gulp---uncaught-referenceerror-exports-is-not-defined
 
-        'node_modules/foundation-sites/js/foundation.core.js',
-        'node_modules/foundation-sites/js/foundation.util.mediaQuery.js',
-        'node_modules/foundation-sites/js/foundation.util.keyboard.js',
-        'node_modules/foundation-sites/js/foundation.util.motion.js',
-        'node_modules/foundation-sites/js/foundation.util.timerAndImageLoader.js',
-        'node_modules/foundation-sites/js/foundation.util.touch.js',
+        'node_modules/foundation-sites/dist/js/foundation.core.js', //must be loaded
+        'node_modules/foundation-sites/dist/js/foundation.util.mediaQuery.js', //must be loaded
+        'node_modules/foundation-sites/dist/js/foundation.smoothScroll.js',
+        // 'node_modules/foundation-sites/js/foundation.util.keyboard.js',
+        // 'node_modules/foundation-sites/js/foundation.util.motion.js',
+        // 'node_modules/foundation-sites/js/foundation.util.timerAndImageLoader.js',
+        // 'node_modules/foundation-sites/js/foundation.util.touch.js',
         // 'node_modules/foundation-sites/js/foundation.toggler.js',
-        'node_modules/foundation-sites/js/foundation.responsiveMenu.js',
-        'node_modules/foundation-sites/js/foundation.responsiveToggle.js',
-        'node_modules/foundation-sites/js/foundation.orbit.js',
+        // 'node_modules/foundation-sites/js/foundation.responsiveMenu.js',
+        // 'node_modules/foundation-sites/js/foundation.responsiveToggle.js',
+        // 'node_modules/foundation-sites/js/foundation.orbit.js',
         'assets/js/components/*.js',
         'assets/js/main.js'
         ],
@@ -123,13 +124,13 @@ gulp.task('uglify', function() {
 gulp.task('concat', function() {
   gulp.src( paths.scripts )
   .pipe(plumber())
+    .pipe(babel({
+        presets: ['es2015']
+    }))
   .pipe(concat('main.js'))
     // .pipe(uglify({
     //     outSourceMap: true
     // }))
-    .pipe(babel({
-        presets: ['es2015']
-    }))
     .pipe(gulp.dest(paths.dest + 'js'))
     .pipe(browserSync.stream());
 });

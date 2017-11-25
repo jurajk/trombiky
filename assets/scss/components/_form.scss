@@ -1,4 +1,6 @@
 .form {
+	@include xy-cell;
+
 	height: rem-calc( 120 );
 	position: relative;
 
@@ -8,7 +10,7 @@
 	}
 
 	&--expanded {
-		height: rem-calc( 670 );
+		height: rem-calc( 780 );
 	}
 
 	&__action {
