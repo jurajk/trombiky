@@ -1,5 +1,5 @@
 (function ($) {
-	$(document).foundation();
+	// $(document).foundation();
 })(jQuery);
 
 jQuery(document).ready(function($) {
