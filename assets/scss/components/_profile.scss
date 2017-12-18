@@ -9,6 +9,11 @@
 	.thumbnail {
 		border-radius: 50%;
 		border-color: $primary-color;
+		margin-bottom: $tr-common-spacing/2;
+
+		@include breakpoint( medium ) {
+			margin-bottom: 0;
+		}
 	}
 
 	&.media-object {
