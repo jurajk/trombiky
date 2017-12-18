@@ -6,6 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+{% include '_gtm_HEAD.twig' %}
+
         <title>{{ block('title') }} | </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +19,7 @@
 {% include '_social_markup.twig' %}
 
         {# <link rel="stylesheet" href="css/normalize.css"> #}
-        <link rel="stylesheet" href="dist/css/main.css?v=20171125">
+        <link rel="stylesheet" href="dist/css/main.css?v=20171129">
         {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
@@ -24,6 +27,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+{% include '_gtm_BODY.twig' %}
 
         {% block page %}{% endblock %}
 
@@ -33,6 +37,8 @@
         <script>
             //$(document).foundation();
         </script>
+
+        <script src="https://script.google.com/macros/u/0/s/AKfycbwEtBl_WVj8PFSLmRJ0MCE53xOP2dxR7tQDNdslzyiQf8ecMxQ/exec&prefix=alert"></script>
     </body>
 </html>
 

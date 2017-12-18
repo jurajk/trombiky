@@ -3,6 +3,13 @@
 
 	height: rem-calc( 120 );
 	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+
+	@include breakpoint( medium ) {
+		@include xy-cell;
+	}
 
 	iframe {
 		height: 100%;
@@ -10,7 +17,7 @@
 	}
 
 	&--expanded {
-		height: rem-calc( 780 );
+		height: rem-calc( 1100 );
 	}
 
 	&__action {

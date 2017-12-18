@@ -6,6 +6,7 @@
 
 		@include breakpoint( medium ) {
 			@include xy-cell( 6 );
+			margin-bottom: $tr-common-spacing;
 		}
 	}
 }

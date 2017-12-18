@@ -46,6 +46,9 @@ var paths = {
         'node_modules/svg4everybody/dist/svg4everybody.min.js'
         ],
         images: ['assets/svg/*.svg'],
+        copyImages: [
+            'assets/images/*.{png,jpg,jpeg,svg}'
+        ],
         fonts: [
         'assets/fonts/*.{ttf,woff,woff2,eot,svg}'
         ],
@@ -159,6 +162,11 @@ gulp.task('copyfonts', function() {
  .pipe(gulp.dest(paths.dest + '/fonts'));
 });
 
+gulp.task('copyImages', function() {
+ gulp.src(paths.copyImages)
+ .pipe(gulp.dest(paths.dest + '/images'));
+});
+
 gulp.task('copyScripts', function() {
  gulp.src(paths.copyScripts)
  .pipe(gulp.dest(paths.dest + '/js'));
@@ -179,4 +187,4 @@ gulp.task('serve', function() {
     // gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', [ 'copyfonts', 'copyScripts', 'svgstore', 'sass', 'twig', 'concat', 'serve' ]);
+gulp.task('default', [ 'copyfonts', 'copyScripts', 'copyImages', 'svgstore', 'sass', 'twig', 'concat', 'serve' ]);
