@@ -7,6 +7,10 @@
 	margin-right: 0;
 	width: 100%;
 
+	.js-ios-detected & {
+		display: none;
+	}
+
 	@include breakpoint( medium ) {
 		@include xy-cell;
 	}

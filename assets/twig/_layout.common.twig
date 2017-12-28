@@ -19,11 +19,11 @@
 {% include '_social_markup.twig' %}
 
         {# <link rel="stylesheet" href="css/normalize.css"> #}
-        <link rel="stylesheet" href="dist/css/main.css?v=20171218">
+        <link rel="stylesheet" href="dist/css/main.css?v=2017121888">
         {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
-    <body>
+    <body class="js-body">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -32,7 +32,8 @@
         {% block page %}{% endblock %}
 
         <script src="dist/js/jquery.min.js"></script>
-        <script src="dist/js/main.js"></script>
+        <script src="dist/js/mobile-detect.min.js"></script>
+        <script src="dist/js/main.js?v=20171228"></script>
 
         <script>
             //$(document).foundation();

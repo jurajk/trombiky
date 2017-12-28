@@ -5,3 +5,30 @@
    - it lives here so it won't get forgotten
    - if there is nothing in this file, well done champs! :)
    ========================================================================== */
+
+
+   #ipad-box 
+               {
+                   // width: 315px;
+                   // height: 469px;
+                   width: 45px;
+                   height: 75px;
+                   float: right;
+                   background-color: white;
+                   border-radius: 4px;
+                   padding: rem-calc( 5px 4px 12px 4px );
+                   margin-bottom: rem-calc( 10 )
+
+               }
+
+
+
+               #ipad-black-box 
+               {
+                   // width: 288px;
+                   // height: 382px;
+                   width: auto;
+                   height: 100%;
+                   // margin: 44px 14px 42px 14px;
+                   background-color: black;
+               }

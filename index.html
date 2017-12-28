@@ -44,11 +44,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<meta name="twitter:description" content="Pomôž nám nájsť 100 statočných - nových darcov krvných doštičiek - stačí, keď odpovieš na týchto pár otázok (zaberie ti 5 minút)" />
 
         
-        <link rel="stylesheet" href="dist/css/main.css?v=20171218">
+        <link rel="stylesheet" href="dist/css/main.css?v=2017121888">
         
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
-    <body>
+    <body class="js-body">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<section class="section section--onecol section--first spacing text-center">
 			<h1 class="spacing">Hľadáme 100 statočných</h1>
-			<div class="sharing">
+			<div class="sharing sharing--top">
 <div class="fb-share-button" data-href="http://100statocnych.sk" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F100statocnych.sk%2F&amp;src=sdkpreparse">Share</a></div>				
 			</div>
 			<p class="intro">
@@ -76,6 +76,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</section>
 
 		<section id="form" class="section section--onecol spacing">
+			<div class="ios-hack text-center">
+				<div class="ios-hack__icon">
+					<div id="ipad-box">
+	                    <div id="ipad-black-box"></div>
+	                </div>
+				</div>
+				<p class="ios-hack__text">Zdá sa, že si túto stránku pozeráš cez Safari na nejakom mobilnom Apple zariadení. Môže sa stať, <strong>že ti náš formulár bude skákať</strong>, ale keď si ho <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" taraget="_blank">otvoríš v novom okne</a>, bude to v pohode :)</p>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" target="_blank" class="ios-hack__cta button">Otvoriť na novej záložke</a>
+				<button class="ios-hack__cta button js-show-form">Nie, otvoriť na stránke</button>
+			</div>
 			<div class="form form--expanded">
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?embedded=true" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 				<button type="button" class="form__action">Zacat vyplnat</button>	
@@ -156,7 +166,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <script src="dist/js/jquery.min.js"></script>
-        <script src="dist/js/main.js"></script>
+        <script src="dist/js/mobile-detect.min.js"></script>
+        <script src="dist/js/main.js?v=20171228"></script>
 
         <script>
             //$(document).foundation();

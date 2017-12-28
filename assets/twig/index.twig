@@ -7,7 +7,7 @@
 	<div class="container">
 		<section class="section section--onecol section--first spacing text-center">
 			<h1 class="spacing">Hľadáme 100 statočných</h1>
-			<div class="sharing">
+			<div class="sharing sharing--top">
 {% include '_fb_share.twig' %}				
 			</div>
 			<p class="intro">
@@ -26,6 +26,16 @@
 		</section>
 
 		<section id="form" class="section section--onecol spacing">
+			<div class="ios-hack text-center">
+				<div class="ios-hack__icon">
+					<div id="ipad-box">
+	                    <div id="ipad-black-box"></div>
+	                </div>
+				</div>
+				<p class="ios-hack__text">Zdá sa, že si túto stránku pozeráš cez Safari na nejakom mobilnom Apple zariadení. Môže sa stať, <strong>že ti náš formulár bude skákať</strong>, ale keď si ho <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" taraget="_blank">otvoríš v novom okne</a>, bude to v pohode :)</p>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" target="_blank" class="ios-hack__cta button">Otvoriť na novej záložke</a>
+				<button class="ios-hack__cta button js-show-form">Nie, otvoriť na stránke</button>
+			</div>
 			<div class="form form--expanded">
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?embedded=true" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 				<button type="button" class="form__action">Zacat vyplnat</button>	

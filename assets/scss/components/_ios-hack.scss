@@ -1,0 +1,13 @@
+.ios-hack {
+	display: none;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary-color;
+    padding: rem-calc( 15px 10px );
+
+    .js-ios-detected & {
+    	display: flex;
+    }
+}
