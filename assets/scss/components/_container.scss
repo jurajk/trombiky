@@ -1,3 +1,7 @@
 .container {
 	@include xy-grid-container;
+
+	@include breakpoint( medium ) {
+		margin-top: rem-calc( 80 );
+	}
 }
