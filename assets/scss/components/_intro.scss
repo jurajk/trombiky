@@ -4,5 +4,6 @@
 	@include breakpoint( medium ) {
 		font-size: rem-calc( 24 );
 		max-width: rem-calc( 640 );
+		margin: 0 auto;
 	}
 }

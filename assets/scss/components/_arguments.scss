@@ -1,0 +1,35 @@
+.arguments {
+	@include reset-list;
+
+
+
+	@include breakpoint( medium ) {
+		max-width: rem-calc( 640 );
+		// margin: 0 auto;
+		font-size: rem-calc( 24 );
+		margin-top: $tr-common-spacing;
+
+		&__item {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			margin-bottom: $tr-common-spacing/2;
+			&::before {
+				content: '\2713';
+				content: '\2794';
+				display: block;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				background-color: $primary-color;
+				color: $body-background;
+				text-align: center;
+				font-size: 48px;
+				font-family: $header-font-family;
+				border-radius: 50%;
+				flex-shrink: 0;
+				margin-right: 20px;
+			}
+		}
+	}
+}

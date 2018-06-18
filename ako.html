@@ -7,27 +7,55 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-{% include '_gtm_HEAD.twig' %}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NS88KPR');</script>
+<!-- End Google Tag Manager -->
 
-        <title>{{ block('title') }} | 100 statočných</title>
+        <title>Ako? | Hľadáme 100 statočných | 100 statočných</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-{% include '_social_markup.twig' %}
 
-        {# <link rel="stylesheet" href="css/normalize.css"> #}
+
+
+
+
+
+
+		<meta property="og:title" content="Pomôž nám ich nájsť" />
+		<meta property="og:image" content="http://100statocnych.sk/dist/images/fb_share.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:description" content="Pomôž nám nájsť 100 statočných - nových darcov krvných doštičiek - stačí, keď odpovieš na týchto pár otázok (zaberie ti 5 minút)" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://100statocnych.sk/" />
+		
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:url" content="http://100statocnych.sk/" />
+		<meta name="twitter:image" content="http://100statocnych.sk/dist/images/fb_share.png" />
+		<meta name="twitter:title" content="Pomôž nám ich nájsť" />
+		<meta name="twitter:description" content="Pomôž nám nájsť 100 statočných - nových darcov krvných doštičiek - stačí, keď odpovieš na týchto pár otázok (zaberie ti 5 minút)" />
+
+        
         <link rel="stylesheet" href="dist/css/main.css?v=2017121888">
-        {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
+        
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
     <body class="js-body">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-{% include '_gtm_BODY.twig' %}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS88KPR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
         <header class="site-header js-site-header">
             <div class="grid-container">
@@ -48,10 +76,20 @@
             </div>
         </header>
 
-        {% block page %}{% endblock %}
+        
+
+	<div class="container">
+		<h2 class="text-center spacing">Ako sa stať darcom?</h2>
+		
+		<section class="section faq spacing">
+		</section>
+	</div>
+
+
+
 
         <footer>
-            {# <section class="section section--invert section--onecol"> #}
+            
                 <h2 class="text-center">Kontakt: </h2>
                 <p class="text-center"><a href="mailto:martin@100statocnych.sk">martin@100statocnych.sk</a>, <a href="mailto:andrej@100statocnych.sk">andrej@100statocnych.sk</a></p>
 
@@ -59,7 +97,7 @@
 
                 <p class="text-center ws-ad">Vlastný <a href='https://www.websupport.sk/freeweb-reklama'>virtuálny server od 5,65 €</a> od WebSupport.sk</p>
                 
-            {# </section> #}
+            
         </footer>
 
         <script src="dist/js/jquery.min.js"></script>
@@ -70,7 +108,7 @@
             //$(document).foundation();
         </script>
 
-        {#<script src="https://script.google.com/macros/u/0/s/AKfycbwEtBl_WVj8PFSLmRJ0MCE53xOP2dxR7tQDNdslzyiQf8ecMxQ/exec&prefix=alert"></script>#}
+        
     </body>
 </html>
 

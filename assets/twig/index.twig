@@ -5,94 +5,71 @@
 {% block page %}
 
 	<div class="container">
-		<section class="section section--onecol section--first spacing text-center">
-			<h1 class="spacing">Hľadáme 100 statočných</h1>
-			<div class="sharing sharing--top">
-{% include '_fb_share.twig' %}				
-			</div>
-			<p class="intro">
-				Ležia v nemocniciach po celom Slovensku a často potrebujú okrem krvi aj <strong>krvné doštičky</strong>. Pacientom hematológie a onkológie zachraňujú životy práve ľudia ako ty - statoční darcovia doštičiek, ktorých nie je veľa.
-			</p>
-			<p class="intro">
-				Pomôž nám nájsť <strong>100 statočných</strong> - úplne nových darcov krvných doštičiek - <strong>stačí, keď odpovieš na týchto pár otázok (5 minút)</strong>.
-			</p>
-			{# <p class="intro">
-				O tom, že môžeš darovať krv asi vieš. To, že sa dajú darovať aj krvné doštičky už také známe nie je. Denne na Slovensku zachraňujú onkologických (rakovina) a hematologických (krv) pacientov, dajú sa skladovať len niekoľko dní a darcov nie je veľa.
-			</p>
-			<p class="intro">
-				<strong>Odpovedz na 8 otázok a pomôž nám tak nájsť 100 úplne nových darcov krvných doštičiek.</strong>
-			</p> #}
-			<a href="#form" class="arrow bounce"></a>
-		</section>
+		<div class="grid-x">
+			<div class="cell text-center">
+				{# <section class="section section--onecol section--first spacing text-center"> #}
+					<h1 class="spacing">Hľadáme 100 statočných</h1>
+					<div class="sharing sharing--top">
+		{% include '_fb_share.twig' %}				
+					</div>
+					<p class="intro">
+						Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Je to zvýšenie povedomia o darovaní krvných doštičiek a získanie <strong>100 pravidelných darcov</strong>, ktorí zachraňujú životy onkologických (rakovina) a hematologických (krv) pacientov. 
 
-		<section id="form" class="section section--onecol spacing">
-			<div class="ios-hack text-center">
-				<div class="ios-hack__icon">
-					<div id="ipad-box">
-	                    <div id="ipad-black-box"></div>
-	                </div>
+					</p>
+					<p class="intro">
+						Ako prvý krok sme vytvorili dotazník, ktorý vyplnilo 485 ľudí. Zistili sme napríklad, že:
+					</p>
+					<div class="grid-x knowledge">
+						<div class="cell small-12 medium-6">
+							<p class="knowledge__thepoint">77%</p>
+							<p class="knowledge__subtitle">nemá info</p>
+						</div>
+						<div class="cell small-12 medium-6">
+							<img src="/dist/images/100_statocnych_prvy_graf.png" alt="">
+						</div>
+					</div>
+				{# </section> #}
+			</div>
+		</div>
+
+		<div class="grid-x">
+			<div class="cell">
+				<h2>Dosky, ktoré znamenajú život</h2>
+				<ul class="arguments">
+					<li class="arguments__item">Trombocyty alias krvné doštičky sú krvné bunky, ktoré majú za úlohu zrážanlivosť krvi</li>
+					<li class="arguments__item">pacientom v dôsledku ochorenia alebo intenzívnej liečby často v krvi chýbajú</li>
+					<li class="arguments__item">ich nedostatok im môže spôsobiť životu nebezpečné krvácanie</li>
+					<li class="arguments__item">transfúzie doštičiek tak <strong>zachraňujú životy</strong></li>
+					<li class="arguments__item">a pritom sa dajú skladovať <strong>len 5 dní</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="grid-x">
+			<div class="cell">
+				<p class="intro">Pacientom hematológie a onkológie zachraňujú životy práve ľudia ako ty - statoční darcovia doštičiek, ktorých nie je veľa.</p>
+
+				<div class="grid-x fakt">
+					<div class="cell small-12 medium-4"><p class="fakt__title">Fakt:</p></div>
+					<div class="cell small-12 medium-8 fakt__textpart"><p class="fakt__text">V Národnom onkologickom ústave, kde sa ročne liečia stovky pacientov reálne chýbajú darcovia krvných doštičiek, najmä v období sviatkov a dovoleniek.</p></div>
 				</div>
-				<p class="ios-hack__text">Zdá sa, že si túto stránku pozeráš cez Safari na nejakom mobilnom Apple zariadení. Môže sa stať, <strong>že ti náš formulár bude skákať</strong>, ale keď si ho <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" taraget="_blank">otvoríš v novom okne</a>, bude to v pohode :)</p>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?usp=sf_link" target="_blank" class="ios-hack__cta button">Otvoriť na novej záložke</a>
-				<button class="ios-hack__cta button js-show-form">Nie, otvoriť na stránke</button>
+
+				<section class="section spacing">
+					<a href="/ako.html" class="button cta align-center spacing">Zisti ako sa stať <br>jedným zo 100 statočných</a>
+				</section>
 			</div>
-			<div class="form form--expanded">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeR3KUCW_sMOV9i4cinIBMgE004Ez6Lc6YDcFMW5BBgz3XHaA/viewform?embedded=true" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-				<button type="button" class="form__action">Zacat vyplnat</button>	
-			</div>
-		</section>
+		</div>
+	</div>
+
+	<div class="container">
+
 
 		<section class="section section--onecol spacing">
 {% include '_fb_share.twig' %}			
 		</section>
 
-		<h2 class="text-center spacing">Kto sme a iné FAQ</h2>
 		
-		<section class="section faq spacing">
-			<div class="faq__col">
-				<div class="media-object profile">
-				  <div class="media-object-section">
-				    <div class="thumbnail">
-				      <img src="dist/images/foto_martin.jpg">
-				    </div>
-				  </div>
-				  <div class="media-object-section">
-				    <h4>Martin Mojzeš</h4>
-				    <p>Som čerstvý otec dvoch detí. Od 18-tich rokov darujem krv, od 27-mich krvné doštičky, posledný rok v Národnom onkologickom ústave. Každý z nás má v okolí niekoho, kto doštičky alebo krv potrebuje. Rozhodol som sa teda týmto projektom spraviť ešte o niečo viac.</p>
-				  </div>
-				</div>				
-			</div>
-			<div class="faq__col">
-				<div class="media-object profile">
-				  <div class="media-object-section">
-				    <div class="thumbnail">
-				      <img src="dist/images/foto_andrej.jpg">
-				    </div>
-				  </div>
-				  <div class="media-object-section">
-				    <h4>Andrej Minárik</h4>
-				    <p>V apríli tohto roku mi začalo byť divne, v máji už som mal diagnózu - akútna lymfoblastová leukémia. Nikdy som nebol darovať krv ani doštičky a teraz ma to mrzí, zvlášť keď vidím z druhej strany ako sú potrebné tu na onkológii. Rozhodol som sa s tým niečo spraviť.</p>
-				  </div>
-				</div>		
-			</div>
-			<div class="faq__col">
-				<h4>Prečo 100 statočných?</h4>
-				<p>
-					Dotazník nám má pomôcť lepšie pochopiť ako darcov krvi (a krvných doštičiek), tak ľudí, ktorí nezvyknú darovať. Chceme nájsť spôsob ako čo najlepšie nájsť <strong>ľudí ochotných stať sa dlhodobými darcami krvných doštičiek, ktorí reálne chýbajú</strong>, najmä v období sviatkov a dovoleniek. Vedeli ste, že doštičky sa dajú skladovať iba 5 dní?
-				</p>
-			</div>
-			<div class="faq__col">
-				<h4>Čo chceme robiť?</h4>
-				<p>
-					Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Je to <strong>zvýšenie povedomia o darovaní krvných doštičiek</strong> a v konečnom dôsledku <strong>viac darcov, ktorí zachraňujú životy</strong> onkologických (rakovina) a hematologických (krv) pacientov. Tých totiž stále pribúda. Rozprávali sme sa s pacientmi, lekármi a sestričkami. A <strong>teraz potrebujeme zistiť viac od darcov a nedarcov</strong>. Dotazník nám pomôže lepšie ich pochopiť a následne nájsť 100 nových darcov doštičiek - 100 statočných.
-				</p>
-				{# <p>Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Rozprávali sme sa s pacientmi, lekármi a sestričkami. A teraz potrebujeme zistiť viac od darcov a nedarcov. Dotazník nám pomôže lepšie ich pochopiť a následne nájsť 100 nových darcov doštičiek - 100 statočných.</p> #}
-			</div>
-		</section>
 
-		<section class="section spacing">
-			<a href="#form" class="button cta align-center spacing" data-smooth-scroll>Vyplniť dotazník</a>
-		</section>
 
 		<section class="section spacing">
 			<h2 class="text-center spacing">Ďakujeme za podporu!</h2>
@@ -100,17 +77,7 @@
 		</section>
 	</div>
 
-	<footer>
-		{# <section class="section section--invert section--onecol"> #}
-			<h2 class="text-center">Kontakt: </h2>
-			<p class="text-center"><a href="mailto:martin@100statocnych.sk">martin@100statocnych.sk</a>, <a href="mailto:andrej@100statocnych.sk">andrej@100statocnych.sk</a></p>
 
-			<p class="text-center">—</p>
-
-			<p class="text-center ws-ad">Vlastný <a href='https://www.websupport.sk/freeweb-reklama'>virtuálny server od 5,65 €</a> od WebSupport.sk</p>
-			
-		{# </section> #}
-	</footer>
 
 
 {% endblock %}
