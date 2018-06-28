@@ -1,5 +1,6 @@
 {% extends "_layout.common.twig" %}
 
+{% block bodyclass %}menu-home{% endblock %}
 {% block title %}Hľadáme 100 statočných{% endblock %}
 
 {% block page %}
@@ -7,30 +8,38 @@
 	<div class="container">
 		<div class="grid-x">
 			<div class="cell text-center">
-				{# <section class="section section--onecol section--first spacing text-center"> #}
-					<h1 class="spacing">Hľadáme 100 statočných</h1>
-					<div class="sharing sharing--top">
-		{% include '_fb_share.twig' %}				
-					</div>
-					<p class="intro">
-						Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Je to zvýšenie povedomia o darovaní krvných doštičiek a získanie <strong>100 pravidelných darcov</strong>, ktorí zachraňujú životy onkologických (rakovina) a hematologických (krv) pacientov. 
+				<h1 class="spacing">Hľadáme 100 statočných</h1>
+				<div class="sharing sharing--top">
+	{% include '_fb_share.twig' %}				
+				</div>
+				<p class="intro">
+					Chceme zlepšiť jednu malú, ale dôležitú vec v našom okolí. Je to zvýšenie povedomia o darovaní krvných doštičiek a získanie <strong>100 pravidelných darcov</strong>, ktorí zachraňujú životy onkologických (rakovina) a hematologických (krv) pacientov. 
 
-					</p>
-					<p class="intro">
-						Ako prvý krok sme vytvorili dotazník, ktorý vyplnilo 485 ľudí. Zistili sme napríklad, že:
-					</p>
-					<div class="grid-x knowledge">
-						<div class="cell small-12 medium-6">
-							<p class="knowledge__thepoint">77%</p>
-							<p class="knowledge__subtitle">nemá info</p>
-						</div>
-						<div class="cell small-12 medium-6">
-							<img src="/dist/images/100_statocnych_prvy_graf.png" alt="">
-						</div>
-					</div>
-				{# </section> #}
+				</p>
+				<p class="intro">
+					Ako prvý krok sme vytvorili dotazník, ktorý vyplnilo 485 ľudí. Zistili sme napríklad, že:
+				</p>
 			</div>
 		</div>
+	</div>
+	<div class="grid-container grid-container--wide">
+		<div class="grid-x">
+			<div class="cell">
+				
+				<div class="grid-x knowledge">
+					<div class="cell small-12 medium-6">
+						<p class="knowledge__thepoint">77%</p>
+						<p class="knowledge__subtitle">nemá info</p>
+					</div>
+					<div class="cell small-12 medium-6">
+						<img src="/dist/images/100_statocnych_prvy_graf.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-container">
 
 		<div class="grid-x">
 			<div class="cell">
@@ -48,7 +57,12 @@
 		<div class="grid-x">
 			<div class="cell">
 				<p class="intro">Pacientom hematológie a onkológie zachraňujú životy práve ľudia ako ty - statoční darcovia doštičiek, ktorých nie je veľa.</p>
-
+			</div>
+		</div>
+	</div>
+	<div class="grid-container grid-container--wide">
+		<div class="grid-x">
+			<div class="cell">
 				<div class="grid-x fakt">
 					<div class="cell small-12 medium-4"><p class="fakt__title">Fakt:</p></div>
 					<div class="cell small-12 medium-8 fakt__textpart"><p class="fakt__text">V Národnom onkologickom ústave, kde sa ročne liečia stovky pacientov reálne chýbajú darcovia krvných doštičiek, najmä v období sviatkov a dovoleniek.</p></div>
@@ -61,7 +75,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="grid-container">
 
 
 		<section class="section section--onecol spacing">

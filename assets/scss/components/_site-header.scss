@@ -29,6 +29,10 @@
 			margin: 0;
 			white-space: nowrap;
 			color: $white;
+
+			a {
+				color: $white;
+			}
 		}
 
 		@include breakpoint( large ) {

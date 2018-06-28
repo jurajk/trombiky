@@ -1,0 +1,5 @@
+.grid-container {
+	&--wide {
+		max-width: rem-calc( 1000 );
+	}
+}

@@ -13,3 +13,8 @@
 		margin-bottom: $tr-common-spacing;
 	}
 }
+
+.align-center {
+    margin-left: 50%;
+    transform: translateX( -50% );
+}

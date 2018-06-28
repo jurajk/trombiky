@@ -19,26 +19,26 @@ jQuery(document).ready(function($) {
 	// });
 
 	// Try to detect devices with form jumpy behavior
-	var iosClass = 'js-ios-detected';
-	var md = new MobileDetect(window.navigator.userAgent);
+	// var iosClass = 'js-ios-detected';
+	// var md = new MobileDetect(window.navigator.userAgent);
 
 
-	if ( md.userAgent() && md.os() ) {
-		console.log( md.userAgent() );       // looking for 'Safari'
-		console.log( md.os() );              // looking for 'iOS'
+	// if ( md.userAgent() && md.os() ) {
+	// 	console.log( md.userAgent() );       // looking for 'Safari'
+	// 	console.log( md.os() );              // looking for 'iOS'
 
-		if ( ( md.userAgent() === 'Safari' ) && ( md.os() === 'iOS' ) ) {
-			$( '.js-body' ). addClass( iosClass );
-		}
-	}
+	// 	if ( ( md.userAgent() === 'Safari' ) && ( md.os() === 'iOS' ) ) {
+	// 		$( '.js-body' ). addClass( iosClass );
+	// 	}
+	// }
 
 
 
-	//button to show form anyway on an iOs device
-	$( '.js-show-form' ).on( 'click touch', function( e ) {
-		console.log( 'show form' );
-		$( '.js-body' ).removeClass( iosClass );
-	});
+	// //button to show form anyway on an iOs device
+	// $( '.js-show-form' ).on( 'click touch', function( e ) {
+	// 	console.log( 'show form' );
+	// 	$( '.js-body' ).removeClass( iosClass );
+	// });
 
 
 });
