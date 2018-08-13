@@ -4897,9 +4897,14 @@ h1 {
 }
 
 .action__email {
-  margin: 2.25rem;
   padding: 2.25rem;
   background-color: #c57eca;
+}
+
+@media print, screen and (min-width: 40em) {
+  .action {
+    margin: 2.25rem;
+  }
 }
 
 .arguments {
@@ -4914,6 +4919,14 @@ h1 {
 
 .arguments__text--withdesc {
   font-weight: bold;
+}
+
+.arguments__alternatebull {
+  font-weight: bold;
+}
+
+.arguments__item {
+  margin-bottom: 1.125rem;
 }
 
 .arguments__desc {
@@ -4939,7 +4952,6 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 1.125rem;
   }
   .arguments__item::before {
     content: '\2713';
@@ -4957,6 +4969,9 @@ h1 {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin-right: 20px;
+  }
+  .arguments__alternatenum, .arguments__alternatebull {
+    display: none;
   }
   .arguments--numbered {
     reset-list: my-counter;
@@ -5284,9 +5299,17 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media print, screen and (min-width: 40em) {
+  .knowledge .cell {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .knowledge__thepoint, .knowledge__subtitle {
@@ -5309,6 +5332,24 @@ footer a:hover {
 
 .monster {
   margin: 2.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.monster__texts {
+  font-family: Montserrat, "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 2.25rem;
+  color: #2881a7;
+}
+
+.monster .cell {
+  margin-bottom: 1.125rem;
 }
 
 .profile {
@@ -5413,13 +5454,14 @@ footer a:hover {
 }
 
 .site-header__title {
-  text-align: left;
+  text-align: center;
   margin-top: 0.5rem;
   font-size: 1.5rem;
 }
 
 @media print, screen and (min-width: 40em) {
   .site-header__title {
+    text-align: left;
     font-size: 1rem;
     line-height: 3.75rem;
     margin: 0;
@@ -5445,14 +5487,14 @@ footer a:hover {
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2.25rem;
-  border: 1px solid #9F28A7;
+  border: 3px solid #9F28A7;
 }
 
 .site-header__menutoggle::before {
   content: '\2630';
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #9F28A7;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 .menuopen .site-header__menutoggle {

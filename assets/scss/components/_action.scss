@@ -5,8 +5,11 @@
 	padding: $tr-common-spacing;
 
 	&__email {
-		margin: $tr-common-spacing;
 		padding: $tr-common-spacing;
 		background-color: #c57eca;
+	}
+
+	@include breakpoint( medium ) {
+		margin: $tr-common-spacing;
 	}
 }

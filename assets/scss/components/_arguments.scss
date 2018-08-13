@@ -9,6 +9,15 @@
 		}
 	}
 
+	&__alternatebull {
+		font-weight: bold;
+	}
+	
+	&__item {
+		margin-bottom: $tr-common-spacing/2;
+		
+	}
+
 	&__desc {
 		font-size: rem-calc( 16 );
 		display: block;
@@ -25,7 +34,6 @@
 			display: flex;
 			flex-flow: row nowrap;
 			align-items: center;
-			margin-bottom: $tr-common-spacing/2;
 			&::before {
 				content: '\2713';
 				content: '\2794';
@@ -43,6 +51,12 @@
 				margin-right: 20px;
 			}
 		}
+		
+		&__alternatenum,
+		&__alternatebull {
+			display: none;
+		}
+		
 		&--numbered {
 			reset-list: my-counter;
 		}

@@ -19,11 +19,12 @@
 	}
 
 	&__title {
-		text-align: left;
+		text-align: center;
 		margin-top: rem-calc( 8 );
 		font-size: rem-calc( 24 );
 
 		@include breakpoint( medium ) {
+			text-align: left;
 			font-size: rem-calc( 16 );
 			line-height: rem-calc( 60 );
 			margin: 0;
@@ -48,13 +49,13 @@
 		width: rem-calc( 36 );
 		height: rem-calc( 36 );
 		line-height: rem-calc( 36 );
-		border: 1px solid $primary-color;
+		border: 3px solid $primary-color;
 		
 		&::before {
 			content: '\2630';
-			font-size: rem-calc( 28 );
+			font-size: rem-calc( 24 );
 			color: $primary-color;
-			line-height: rem-calc( 32 );
+			line-height: rem-calc( 28 );
 		}
 
 		.menuopen & {
