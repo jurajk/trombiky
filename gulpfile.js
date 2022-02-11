@@ -62,37 +62,39 @@ var paths = {
 };
 
 // Compile Sass
-gulp.task("sass", function () {
-  gulp
-    .src(paths.scss)
-    .pipe(plumber())
-    // .pipe(sourcemaps.init()) // Initialize sourcemap plugin
-    .pipe(
-      cssGlobbing({
-        extensions: [".scss"],
-        autoReplaceBlock: {
-          onOff: true,
-          globBlockBegin: "cssGlobbingBegin",
-          globBlockEnd: "cssGlobbingEnd",
-          globBlockContents: "components/*.scss",
-        },
-        scssImportPath: {
-          leading_underscore: false,
-          filename_extension: false,
-        },
-      })
-    )
-    .pipe(
-      sass({
-        includePaths: paths.scssPaths,
-        outputStyle: "expanded",
-      })
-    )
-    .pipe(prefix("last 2 versions", "> 1%", "ie 8"))
-    // .pipe(minifycss()) //TODO turn on
-    // .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.dest + "css"))
-    .pipe(browserSync.stream());
+gulp.task("sass", function (done) {
+  return (
+    gulp
+      .src(paths.scss)
+      .pipe(plumber())
+      // .pipe(sourcemaps.init()) // Initialize sourcemap plugin
+      .pipe(
+        cssGlobbing({
+          extensions: [".scss"],
+          autoReplaceBlock: {
+            onOff: true,
+            globBlockBegin: "cssGlobbingBegin",
+            globBlockEnd: "cssGlobbingEnd",
+            globBlockContents: "components/*.scss",
+          },
+          scssImportPath: {
+            leading_underscore: false,
+            filename_extension: false,
+          },
+        })
+      )
+      .pipe(
+        sass({
+          includePaths: paths.scssPaths,
+          outputStyle: "expanded",
+        })
+      )
+      .pipe(prefix("last 2 versions", "> 1%", "ie 8"))
+      // .pipe(minifycss()) //TODO turn on
+      // .pipe(sourcemaps.write())
+      .pipe(gulp.dest(paths.dest + "css"))
+      .pipe(browserSync.stream())
+  );
 });
 
 // Compile Twig templates
@@ -107,7 +109,7 @@ gulp.task("twig", function () {
 
 // Uglify JS
 gulp.task("uglify", function () {
-  gulp
+  return gulp
     .src(["assets/js/main.js"])
     .pipe(plumber())
     .pipe(
@@ -121,20 +123,22 @@ gulp.task("uglify", function () {
 // Concat
 // TODO concat normalize.css from bower components with our stylesheet
 gulp.task("concat", function () {
-  gulp
-    .src(paths.scripts)
-    .pipe(plumber())
-    .pipe(
-      babel({
-        presets: ["es2015"],
-      })
-    )
-    .pipe(concat("main.js"))
-    // .pipe(uglify({
-    //     outSourceMap: true
-    // }))
-    .pipe(gulp.dest(paths.dest + "js"))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src(paths.scripts)
+      .pipe(plumber())
+      .pipe(
+        babel({
+          presets: ["es2015"],
+        })
+      )
+      .pipe(concat("main.js"))
+      // .pipe(uglify({
+      //     outSourceMap: true
+      // }))
+      .pipe(gulp.dest(paths.dest + "js"))
+      .pipe(browserSync.stream())
+  );
 });
 
 // //SVGs
@@ -161,18 +165,18 @@ gulp.task("svgstore", function () {
 });
 
 gulp.task("copyfonts", function () {
-  gulp.src(paths.fonts).pipe(gulp.dest(paths.dest + "/fonts"));
+  return gulp.src(paths.fonts).pipe(gulp.dest(paths.dest + "/fonts"));
 });
 
 gulp.task("copyImages", function () {
-  gulp.src(paths.copyImages).pipe(gulp.dest(paths.dest + "/images"));
+  return gulp.src(paths.copyImages).pipe(gulp.dest(paths.dest + "/images"));
 });
 
 gulp.task("copyScripts", function () {
-  gulp.src(paths.copyScripts).pipe(gulp.dest(paths.dest + "/js"));
+  return gulp.src(paths.copyScripts).pipe(gulp.dest(paths.dest + "/js"));
 });
 
-gulp.task("serve", function () {
+gulp.task("serve", function (done) {
   browserSync.init({
     server: {
       baseDir: "./dist",
@@ -183,6 +187,7 @@ gulp.task("serve", function () {
   gulp.watch(paths.twigWatch, gulp.series("twig"));
   gulp.watch(paths.scssWatch, gulp.series("sass"));
   gulp.watch(paths.scripts, gulp.series("concat"));
+  done();
   // gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
