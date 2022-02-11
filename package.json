@@ -28,5 +28,9 @@
   "dependencies": {
     "browser-sync": "^2.5.2",
     "mobile-detect": "^1.4.1"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
   }
 }
