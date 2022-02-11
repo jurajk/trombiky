@@ -101,7 +101,7 @@ gulp.task("twig", function () {
   return gulp
     .src(paths.twigTemplates)
     .pipe(twig())
-    .pipe(gulp.dest("."))
+    .pipe(gulp.dest("./dist"))
     .pipe(browserSync.stream());
 });
 
@@ -175,7 +175,7 @@ gulp.task("copyScripts", function () {
 gulp.task("serve", function () {
   browserSync.init({
     server: {
-      baseDir: ".",
+      baseDir: "./dist",
       index: "/index.html",
     },
   });
