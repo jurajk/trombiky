@@ -199,3 +199,15 @@ gulp.task(
     "serve"
   )
 );
+
+gulp.task(
+  "build",
+  gulp.parallel(
+    "copyfonts",
+    "copyScripts",
+    "copyImages",
+    "sass",
+    "twig",
+    "concat"
+  )
+);
