@@ -1,5 +1,5 @@
 {
-  "name": "pechakucha",
+  "name": "trombiky",
   "author": "Andrej Minarik",
   "private": true,
   "version": "0.0.1",
@@ -9,9 +9,9 @@
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-css-globbing": "^0.2.2",
-    "gulp-clean-css": "latest",
     "gulp-plumber": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
@@ -20,12 +20,18 @@
     "gulp-twig": "^1.1.1",
     "gulp-uglify": "latest",
     "gulp-watch": "latest",
+    "motion-ui": "latest",
     "path": "^0.12.7",
-    "motion-ui": "latest"
+    "sass": "^1.49.7",
+    "svg4everybody": "^2.1.9"
   },
   "dependencies": {
     "browser-sync": "^2.5.2",
     "clipboard": "^2.0.1",
     "mobile-detect": "^1.4.1"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
   }
 }
