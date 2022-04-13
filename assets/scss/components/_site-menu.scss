@@ -1,38 +1,39 @@
 .site-menu {
-	@include reset-list();
+  @include reset-list();
 
-	&__href {
-		width: 100%;
-		text-align: center;
-		display: inline-block;
-		padding: rem-calc( 15 );
-		border-top: 1px solid $primary-color;
-	}
+  &__href {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: rem-calc(15);
+    border-top: 1px solid $primary-color;
+  }
 
-	@include breakpoint( medium ) {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-end;
+  @include breakpoint(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 
-		&__item {
-			margin-left: rem-calc( 30 );
-		}
+    &__item {
+      margin-left: rem-calc(30);
+    }
 
-		&__href {
-			border: 0;
-			line-height: rem-calc( 60 );
-			padding: 0;
-			color: $white;
+    &__href {
+      border: 0;
+      line-height: rem-calc(60);
+      padding: 0;
+      color: $white;
 
-			&:hover,
-			body.menu-home &.menu-home,
-			body.menu-ako &.menu-ako,
-			body.menu-faq &.menu-faq,
-			body.menu-onas &.menu-onas,
-			body.menu-media &.menu-media {
-				color: $white;
-				text-decoration: underline;
-			}
-		}
-	}
+      &:hover,
+      body.menu-home &.menu-home,
+      body.menu-ako &.menu-ako,
+      body.menu-faq &.menu-faq,
+      body.menu-onas &.menu-onas,
+      body.menu-media &.menu-media,
+      body.menu-kde &.menu-kde {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
 }
