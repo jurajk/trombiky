@@ -1,0 +1,32 @@
+.knowledge {
+
+	.cell {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+		@include breakpoint( medium ) {
+			align-items: flex-start;
+		}
+	} 
+
+	&__thepoint, &__subtitle {
+		text-align: center;
+		font-family: $header-font-family;
+		font-weight: bold;
+		line-height: 1;
+	}
+	
+	&__thepoint {
+		font-size: rem-calc( 120 );
+		color: #c5767c;
+		margin-bottom: 0;
+	}
+
+	&__subtitle {
+		font-size: rem-calc( 50 );
+		color: $primary-color;
+
+	}
+}

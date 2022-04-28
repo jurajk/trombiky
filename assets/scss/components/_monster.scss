@@ -1,0 +1,16 @@
+.monster {
+	margin: $tr-common-spacing 0;
+	display: flex;
+    flex-flow: column nowrap;
+
+	&__texts {
+		font-family: $header-font-family;
+		font-weight: bold;
+		margin-top: rem-calc( $tr-common-spacing );
+		color: #2881a7;
+	}
+
+	.cell {
+		margin-bottom: rem-calc( $tr-common-spacing/2 );
+	}
+}

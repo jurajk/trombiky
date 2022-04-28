@@ -26,18 +26,18 @@ var paths = {
 
     // TODO temporarily loading from dist folder, find out how to load original files
     // https://foundation.zurb.com/forum/posts/53440-foundation-custom-gulp---uncaught-referenceerror-exports-is-not-defined
-
     "node_modules/foundation-sites/dist/js/plugins/foundation.core.js", //must be loaded
     "node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.js", //must be loaded
     "node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.js",
-    // 'node_modules/foundation-sites/js/foundation.util.keyboard.js',
-    // 'node_modules/foundation-sites/js/foundation.util.motion.js',
-    // 'node_modules/foundation-sites/js/foundation.util.timerAndImageLoader.js',
-    // 'node_modules/foundation-sites/js/foundation.util.touch.js',
-    // 'node_modules/foundation-sites/js/foundation.toggler.js',
-    // 'node_modules/foundation-sites/js/foundation.responsiveMenu.js',
-    // 'node_modules/foundation-sites/js/foundation.responsiveToggle.js',
-    // 'node_modules/foundation-sites/js/foundation.orbit.js',
+    "node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.js",
+    // 'node_modules/foundation-sites/js/plugins/foundation.util.motion.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.util.timerAndImageLoader.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.util.touch.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.toggler.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.responsiveMenu.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.responsiveToggle.js',
+    // 'node_modules/foundation-sites/js/plugins/foundation.orbit.js',
+    "node_modules/foundation-sites/dist/js/plugins/foundation.accordion.js",
     "assets/js/components/*.js",
     "assets/js/main.js",
   ],
@@ -45,6 +45,7 @@ var paths = {
     "node_modules/jquery/dist/jquery.min.js",
     "node_modules/svg4everybody/dist/svg4everybody.min.js",
     "node_modules/mobile-detect/mobile-detect.min.js",
+    "node_modules/clipboard/dist/clipboard.min.js",
   ],
   images: ["assets/svg/*.svg"],
   copyImages: ["assets/images/*.{png,jpg,jpeg,svg}"],

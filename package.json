@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.5.2",
+    "clipboard": "^2.0.1",
     "mobile-detect": "^1.4.1"
   },
   "scripts": {

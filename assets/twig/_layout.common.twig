@@ -1,4 +1,4 @@
-
+{% set phone = "02/5937 87 65" %}
 
 
 <!doctype html>
@@ -9,7 +9,7 @@
 
 {% include '_gtm_HEAD.twig' %}
 
-        <title>{{ block('title') }} | </title>
+        <title>{{ block('title') }} | 100 statočných</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,20 +19,55 @@
 {% include '_social_markup.twig' %}
 
         {# <link rel="stylesheet" href="css/normalize.css"> #}
-        <link rel="stylesheet" href="/css/main.css?v=2017121888">
+        <link rel="stylesheet" href="/css/main.css?v=20180813">
         {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
-    <body class="js-body">
+    <body class="js-body {{ block('bodyclass') }}">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 {% include '_gtm_BODY.twig' %}
 
+        <header class="site-header js-site-header">
+            <div class="grid-container grid-container--wide">
+                <div class="grid-x">
+                    <button class="site-header__menutoggle js-menutoggle"></button>
+                    <div class="cell small-12 medium-2 large-3"><h1 class="site-header__title"><a href="/">100 statočných</a></h1></div>
+                    <div class="cell medium-10 large-9 site-header__navigation">
+                        <nav class="site-navigation">
+                            <ul class="site-menu">
+                                <li class="site-menu__item"><a href="/" class="site-menu__href menu-home">Úvod</a></li>
+                                <li class="site-menu__item"><a href="ako.html" class="site-menu__href menu-ako">Ako?</a></li>
+                                <li class="site-menu__item"><a href="kde.html" class="site-menu__href menu-kde">Kde?</a></li>
+                                <li class="site-menu__item"><a href="faq.html" class="site-menu__href menu-faq">Časté otázky</a></li>
+                                <li class="site-menu__item"><a href="onas.html" class="site-menu__href menu-onas">O nás</a></li>
+                                <li class="site-menu__item"><a href="media.html" class="site-menu__href menu-media">Médiá</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         {% block page %}{% endblock %}
 
+        <footer>
+            {# <section class="section section--invert section--onecol"> #}
+                <h2 class="text-center">Kontakt: </h2>
+                <p class="text-center"><a href="mailto:martin.mojzes@plusko.net">martin.mojzes@plusko.net</a></p>
+
+                <p class="text-center">—</p>
+
+                <p class="text-center ws-ad">Použité ikony z Noun Project: Ghost by Clockwise, right turn by Ben Davis, No Entry by Ben Davis</p>
+                
+            {# </section> #}
+        </footer>
+
         <script src="/js/jquery.min.js"></script>
-        <script src="/js/mobile-detect.min.js"></script>
+        {# <script src="/js/mobile-detect.min.js"></script> #}
+        <script src="/js/clipboard.min.js"></script>
+
         <script src="/js/main.js?v=20171228"></script>
 
         <script>

@@ -1,0 +1,27 @@
+.fakt {
+	border: 1px solid $primary-color;
+	padding: $tr-common-spacing;
+	margin-top: $tr-common-spacing;
+	margin-bottom: $tr-common-spacing;
+
+	&__title {
+		margin-bottom: 0;
+		@include breakpoint( medium ) {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: rem-calc( 60 );
+			color: $primary-color;
+		}
+	}
+
+	&__textpart {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+	}
+
+	&__text {
+		margin-bottom: 0;
+	}
+}

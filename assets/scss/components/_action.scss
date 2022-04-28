@@ -1,0 +1,15 @@
+.action {
+	background-color: $primary-color;
+	color: $body-background;
+	margin-bottom: $tr-common-spacing;
+	padding: $tr-common-spacing;
+
+	&__email {
+		padding: $tr-common-spacing;
+		background-color: #c57eca;
+	}
+
+	@include breakpoint( medium ) {
+		margin: $tr-common-spacing;
+	}
+}

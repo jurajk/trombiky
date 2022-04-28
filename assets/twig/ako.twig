@@ -1,0 +1,121 @@
+{% extends "_layout.common.twig" %}
+
+{% block bodyclass %}menu-ako{% endblock %}
+{% block title %}Ako? | Hľadáme 100 statočných{% endblock %}
+
+{% block page %}
+
+	<div class="container">
+		<h1 class="text-center spacing">Ako sa stať darcom?</h1>
+		<p class="intro text-center">
+			Výborne. Máš za sebou dôležitý krok - zaujímať sa o druhých ľudí. Ďalšie <strong>4 kroky pomôžu zachrániť životy</strong> pacientom Národného onkologického ústavu. 
+		</p>
+		<p class="intro text-center">
+			Samotnému darovaniu krvných doštičiek predchádza registrácia, vyplnenie dotazníka, vyšetrenia tvojho zdravia a rozhovor s milým doktorom / doktorkou.
+		</p>
+		<p class="intro text-center"> 
+			No, netvrdili sme, že stať sa jedným zo 100 statočných je jednoduché ;) <strong>Zachrániť život je málokedy jednoduché</strong>.
+		</p>
+		{# <p class="intro text-center">
+			Nie si si istý alebo istá, či môžeš darovať krvné doštičky, urob si náš test a zisti viac.
+		</p> #}
+		
+		<section class="section faq spacing">
+		</section>
+
+
+		<div class="grid-x">
+			<div class="cell">
+				<h2>Bude potrebné:</h2>
+
+				<ul class="arguments arguments--numbered">
+					<li class="arguments__item">
+						<p class="arguments__text arguments__text--withdesc">
+							<span class="arguments__alternatenum">1. </span>Dohodnúť telefonicky stretnutie, prísť do NOÚ na <a href="https://goo.gl/maps/sCH2MvfpD6F2" title="Google mapa">Klenovú ulicu 1</a> a <strong>registrovať sa, aby ťa mali v systéme</strong> 
+							<span class="arguments__desc">Telefón je {{ phone }}. V NOÚ: pri fontáne najskôr vojdeš do nemocnice hlavným vchodom a pri infopulte sa spýtaš, kde je registrácia - pošlú ťa do budovy naproti.</span>
+						</p>
+					</li>
+					<li class="arguments__item">
+						<p class="arguments__text arguments__text--withdesc">
+							<span class="arguments__alternatenum">2. </span>Vyplniť dotazník a pripraviť sa na vyšetrenia 
+							<span class="arguments__desc">Najprv potrebuješ prejsť na hematológiu - vstup pre darcov je zvonku po takej vtipnej rampe (tu je <a href="https://www.google.com/maps/d/u/0/viewer?mid=1AYnB636IBKPEtG_2tduGWXxvPrw&ll=48.172076301693906%2C17.089873099999977&z=18">mapka</a> alebo pani pri infopulte). Dostaneš žiadanky na ďalšie vyšetrenia a v prípade potreby aj potvrdenie do práce. Urobia ti bez čakania kontrolný odber krvi.</span>
+						</p>
+					</li>
+					<li class="arguments__item">
+						<p class="arguments__text arguments__text--withdesc">
+							<span class="arguments__alternatenum">3. </span>Absolvovať röntgen pľúc a EKG 
+							<span class="arguments__desc">EKG je párminútové vyšetrenie, ktoré ti povie, či máš srdce v poriadku - dostaneš na hrudník zopár prísaviek a prístroj vypľuje papier so všeliakými krivkami, pohodlne pri tom ležíš a je to skôr také relaxačné cvičenie :)</span>
+						</p>
+					</li>
+					<li class="arguments__item">
+						<p class="arguments__text arguments__text--withdesc">
+							<span class="arguments__alternatenum">4. </span>O týždeň si dohodni termín odberu
+							<span class="arguments__desc">V tento deň už viac nespravíš. Ale máš za sebou najdôležitejší krok - ten prvý. Podľa výsledkov vyšetrení ešte prebehne pri tvojej ďalšej návšteve rozhovor s lekárom.</span>
+						</p>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="grid-x">
+			<div class="cell">
+				<h2>Ako potom prebieha samotný odber?</h2>
+
+				<p>
+					Na dátume a čase odberu sa dohodnete so sestričkou osobne alebo telefonicky - {{ phone }}.
+				</p>
+
+				<p>Krvné doštičky sa filtrujú z krvi na separátore. Sadneš si do pohodlného kresla a milá sestrička sa o teba postará. Ihla z jednej žily na ruke posiela krv do separátora, hadičkou v druhej ruke sa ti vracia naspäť (ale ide to aj cez jednu ruku - či budete robiť odber jednožilovo alebo dvojžilovo je na tvojej dohode so sestričkou). Mimo tvojho tela je vždy len malé množstvo tvojej krvi a tá prechádza len cez jednorazové sterilné hadičky.</p> 
+
+				<p>Trvanie je individuálne, väčšinou hodinu - hodinu a štvrť. Pokojne si dones niečo na počúvanie.</p>
+			</div>
+		</div>
+	</div>
+	<div class="grid-container grid-container--wide">
+		<div class="grid-x">
+			<div class="cell">
+				{# strasidlo #}
+				<div class="monster">
+					<img src="/images/monster.svg" alt="Bezne strachy z darovania dosticiek">
+					<div class="grid-x grid-padding-x monster__texts">
+						<div class="cell medium-4">
+							Doštičky sa ti po odbere obnovia už po 72 hodinách.
+						</div>
+						<div class="cell medium-4">
+							Celý set používaný na odber je sterilný a jednorázový.
+						</div>
+						<div class="cell medium-4">
+							Doštičky sa dajú odoberať jednožilovo aj dvojžilovo.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-container">
+		<div class="grid-x">
+			<div class="cell">
+			
+				<h3>Ako sa budeš cítiť po odbere?</h3>
+
+				<p>Samozrejme, je to individuálne. Vo všeobecnosti <strong>telo znáša darovanie krvných doštičiek lepšie ako darovanie krvi</strong>. </p>
+				
+				<p>Môže sa stať, že budeš cítiť brnenie na perách, alebo niekde v tele. To je spôsobené tým, že do krvi dostávaš aj roztok na rozriedenie krvi (aby sa nezrážala na hadičkách v prístroji). Ak sa to stane, sestrička Ti rada dá šumivé kalcium a po chvíli brnenie ustane. Ak by Ti bolo trochu chladno (predsalen krv ide mimo tela a môže sa ochladiť pod 37°C), k dispozícii sú deky.</p>
+
+			</div>
+		</div>
+
+		<div class="grid-x">
+			<div class="cell">
+				<h2>A čo potom?</h2>
+				<p>Ak všetko dobre dopadlo, môžeš byť pravidelným darcom, čo má najväčší význam. Môže sa stať, že ti z NOÚ zavolajú, keď budú tvoje doštičky potrebovať. Tvoje telo si ich do troch dní znovu vyrobí a niekomu hore na oddelení možno už o pár hodín veľmi pomôžu. Samozrejme, nemusíš čakať, kým sa ti sestrička ozve, pokojne zavolaj po mesiaci od posledného darovania ty a dohodni si ďalší termín. </p>
+
+				<p>Akékoľvek otázky budeš mať, môžeš napísať priamo na martin.mojzes@plusko.net alebo zavolať do NOÚ na spomínaný tel {{ phone }}.</p>
+			</div>
+		</div>
+	</div>
+{% include '_actions.twig'	%}
+
+{% endblock %}
